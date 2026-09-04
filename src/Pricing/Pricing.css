@@ -1,0 +1,171 @@
+.btnn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #4169e1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+  width: auto;
+}
+
+.btnn:hover {
+  background: #344F9D;
+}
+
+.pricing-section {
+  text-align: center;
+  padding: 70px 10%;
+  background: #f9f9ff;
+  animation-name: delay;
+  animation-duration: 1.3s;
+}
+
+.pricing-section h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+
+.pricing-section p {
+  color: rgb(255, 249, 249);
+  margin-bottom: 50px;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #4169e1;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.price span {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.pricing-card ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.pricing-card ul li {
+  padding: 8px 0;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.featured {
+  background: linear-gradient(135deg, #668cfd, #2447ae);
+  /* #4169e1 */
+  color: white;
+}
+
+.featured h3,
+.featured .price,
+.featured ul li {
+  color: white;
+}
+
+.featured .price span {
+  font-size: 16px;
+  color: #cdc6c6;
+}
+
+.featured .btnn {
+  background: white;
+  color: #4169e1;
+}
+
+.featured .btn:hover {
+  background: #d8dbe4;
+}
+
+.pricing-section {
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+}   
+
+.subtitle {
+  max-width: 650px;
+  margin: 15px auto 50px;
+  font-size: 16px;
+  color: rgb(100, 100, 100);
+  line-height: 1.6;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.mentor-card {
+  max-width: 1000px;
+}
+.highlight-text {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.pricing-card ul {
+  text-align: center;
+}
+
+.pricing-card ul li {
+  font-size: 15px;
+}
+
+.big-btn {
+  padding: 14px 22px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.trust-text {
+  margin-top: 15px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+
+.grey-text h3 {
+  color: grey;
+  font-size: 16px;
+}

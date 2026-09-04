@@ -1,0 +1,196 @@
+/* Certification Page Styles - Fixed Syntax */
+
+.certification-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg,
+            #f5f7ff 0%,
+            #dbe4ff 50%,
+            #c7d2fe 100%);
+    padding: 40px 20px;
+    font-family: 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    animation-name: delay;
+    animation-duration: 1s;
+}
+
+.certification-container {
+    max-width: 580px;
+    width: 100%;
+    background: #ffffff;
+    padding: 48px 44px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(65, 105, 225, 0.12);
+    text-align: center;
+}
+
+.cert-icon-wrapper {
+    margin-bottom: 16px;
+}
+
+.cert-icon {
+    font-size: 3rem;
+    display: inline-block;
+}
+
+.certification-badge {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #4169e1;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.certification-headline {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #111827;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+}
+
+.certification-description {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.75;
+    margin: 0 0 32px 0;
+}
+
+.certification-points {
+    background: #f5f7ff;
+    border-radius: 14px;
+    padding: 26px 28px;
+    margin-bottom: 32px;
+    border: 1px solid #c7d2fe;
+}
+
+.points-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin: 0 0 18px 0;
+    text-align: left;
+}
+
+.points-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.point-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 11px 0;
+    border-bottom: 1px solid #dbe4ff;
+}
+
+.point-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.point-item:first-child {
+    padding-top: 0;
+}
+
+.point-check {
+    font-size: 0.85rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4169e1;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+.point-text {
+    font-size: 0.95rem;
+    color: #374151;
+    font-weight: 500;
+}
+
+.cta-wrapper {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.cta-button-primary {
+    background: linear-gradient(135deg, #4169e1 0%, #1e40af 100%);
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.cta-button-primary:hover {
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+    transform: translateY(-2px);
+}
+
+.cta-button-secondary {
+    background: #ffffff;
+    color: #4169e1;
+    border: 2px solid #c7d2fe;
+    padding: 13px 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.cta-button-secondary:hover {
+    background: #f5f7ff;
+    border-color: #a5b4fc;
+    transform: translateY(-2px);
+}
+
+.trust-text {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .certification-container {
+        padding: 36px 24px;
+        border-radius: 16px;
+    }
+
+    .certification-headline {
+        font-size: 1.75rem;
+    }
+
+    .cta-wrapper {
+        flex-direction: column;
+    }
+
+    .cta-button-primary,
+    .cta-button-secondary {
+        width: 100%;
+    }
+}

@@ -1,0 +1,773 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f9ff;
+  color: #111;
+}
+.hero {
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 900px;
+
+  padding: 20px;
+}
+
+.hero-content h1 {
+  color: white;
+
+  font-size: 52px;
+  font-weight: 700;
+
+  margin: 0 0 18px;
+}
+
+.hero-content p {
+  color: white;
+
+  font-size: 20px;
+
+  margin: 0 0 30px;
+}
+
+.btn.cta {
+  padding: 14px 28px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  background: #4169e1;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.btn.cta:hover {
+  background: #344e9b;
+
+  transform: translateY(-2px);
+}
+
+/* BUTTON */
+.btn.cta {
+  padding: 14px 28px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  background: #4169e1;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.btn.cta:hover {
+  background: #344e9b;
+  transform: translateY(-2px);
+}
+.courses-section {
+  max-width: 1100px;
+
+  margin: 50px auto;
+
+  text-align: center;
+
+  padding: 0 20px;
+
+  animation-name: delay;
+  animation-duration: 1.3s;
+}
+
+.courses-section h2 {
+  font-size: 28px;
+
+  margin-bottom: 10px;
+
+  color: #111;
+}
+
+.courses-section > p {
+  color: #666;
+
+  margin-bottom: 40px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   COURSE CARDS WRAPPER
+========================================= */
+
+.cards-wrapper {
+  position: relative;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+
+/* Cards container */
+
+.cards {
+  display: flex;
+
+  gap: 20px;
+
+  transition: transform 0.5s ease;
+
+  padding: 20px;
+
+  scroll-behavior: smooth;
+}
+
+
+/* Individual card */
+
+.card {
+  min-width: 280px;
+
+  flex: 0 0 calc(50% - 10px);
+
+  background: #fff;
+
+  border: 1px solid #eee;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+  overflow: hidden;
+
+  text-align: left;
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   COURSE IMAGES
+========================================= */
+
+.div-img1,
+.div-img2,
+.div-img3,
+.div-img4 {
+  width: 100%;
+
+  height: 240px;
+
+  border-radius: 10px 10px 0 0;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+
+/* Full Stack */
+
+.div-img1 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9kSSgd9JhbQNXDv9kpXbHp6hzl3OiQ9zdJg&s");
+}
+
+
+/* Digital Marketing */
+
+.div-img2 {
+  background-image: url("https://academy.skillgenic.in/wp-content/uploads/2020/07/1340caf6112d8998a65f47bbc026.png");
+}
+
+
+/* Data Science */
+
+.div-img3 {
+  background-image: url("https://nearlearn.com/public/images/data-science-python-course-in-bangalore.jpg");
+}
+
+
+/* UI UX */
+
+.div-img4 {
+  background-image: url("https://www.webskittersacademy.in/wp-content/uploads/2024/10/Academy-Blog-Banner-23-10-2024.jpg");
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.card-content {
+  padding: 20px;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+
+  font-size: 20px;
+
+  color: #111;
+}
+
+.card .rating {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 14px;
+
+  margin-top: 10px;
+
+  color: #555;
+
+  flex-wrap: wrap;
+}
+
+.rating span {
+  display: inline-block;
+
+  background: #f7f7f7;
+
+  padding: 3px 8px;
+
+  border-radius: 5px;
+}
+
+
+/* =========================================
+   SLIDER BUTTONS
+========================================= */
+
+.scroll-btn {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  background: #4169e1;
+
+  color: white;
+
+  border: none;
+
+  font-size: 26px;
+
+  cursor: pointer;
+
+  padding: 12px 18px;
+
+  border-radius: 50%;
+
+  z-index: 10;
+
+  transition: 0.3s;
+
+  opacity: 0.9;
+}
+
+.scroll-btn:hover {
+  background: #344e9b;
+
+  opacity: 1;
+
+  transform: translateY(-50%) scale(1.05);
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+
+
+/* =========================================
+   ALL COURSES BUTTON
+========================================= */
+
+.mtop30 {
+  margin-top: 30px;
+}
+
+
+/* =========================================
+   BOOTCAMP SECTION
+========================================= */
+
+.bootcamp-section {
+  max-width: 1100px;
+
+  margin: 70px auto;
+
+  text-align: center;
+
+  padding: 0 20px;
+
+  animation-name: delay;
+  animation-duration: 1.3s;
+}
+
+.bootcamp-section h2 {
+  font-size: 28px;
+
+  margin-bottom: 10px;
+}
+
+.bootcamp-section p {
+  color: #666;
+
+  margin-bottom: 40px;
+}
+
+
+/* Roadmap */
+
+.roadmap {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 25px;
+}
+
+
+/* Step */
+
+.step {
+  background: #fff;
+
+  border: 1px solid #eee;
+
+  border-radius: 12px;
+
+  padding: 25px 20px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.05);
+
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Circle */
+
+.circle {
+  width: 45px;
+
+  height: 45px;
+
+  background: #4169e1;
+
+  color: #fff;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-weight: bold;
+
+  margin: 0 auto 15px;
+
+  font-size: 18px;
+}
+
+
+/* =========================================
+   BENEFITS SECTION
+========================================= */
+
+.benefits-section {
+  max-width: 1100px;
+
+  margin: 80px auto;
+
+  text-align: center;
+
+  padding: 0 20px;
+}
+
+.benefits-section h2 {
+  font-size: 28px;
+
+  margin-bottom: 10px;
+}
+
+.benefits-section > p {
+  color: #666;
+
+  margin-bottom: 40px;
+}
+
+
+/* Benefits grid */
+
+.benefits {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 25px;
+}
+
+
+/* Benefit card */
+
+.benefit {
+  background: #fff;
+
+  border: 1px solid #eee;
+
+  border-radius: 12px;
+
+  padding: 30px 20px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.05);
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.benefit:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Benefit icon */
+
+.benefit i {
+  font-size: 40px;
+
+  color: #4169e1;
+
+  margin-bottom: 15px;
+
+  display: block;
+}
+
+.benefit h3 {
+  font-size: 20px;
+
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 14px;
+
+  color: #555;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.faq-container {
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 2rem 1rem;
+
+  animation-name: delay;
+  animation-duration: 1.3s;
+}
+
+.faq-title {
+  text-align: center;
+
+  font-size: 2rem;
+
+  margin-bottom: 2rem;
+
+  transition: transform 0.3s ease;
+}
+
+.faq-title:hover {
+  transform: scale(1.05);
+}
+
+
+/* FAQ item */
+
+.faq-item {
+  background-color: white;
+
+  border: 1px solid #ddd;
+
+  border-radius: 5px;
+
+  margin-bottom: 10px;
+
+  transition: 0.3s;
+
+  overflow: hidden;
+}
+
+
+/* Question */
+
+.faq-question {
+  padding: 1rem;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  position: relative;
+
+  padding-right: 50px;
+}
+
+
+/* Plus / Minus */
+
+.faq-question::after {
+  content: "+";
+
+  position: absolute;
+
+  right: 20px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: 20px;
+
+  color: #4169e1;
+}
+
+
+/* Active */
+
+.faq-item.active .faq-question::after {
+  content: "-";
+}
+
+
+/* Answer */
+
+.faq-answer {
+  display: none;
+
+  padding: 1rem;
+
+  border-top: 1px solid #eee;
+
+  background-color: #fefefe;
+
+  color: #444;
+
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes delay {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .cards {
+    gap: 15px;
+  }
+
+  .card {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .hero {
+    height: 70vh;
+
+    min-height: 450px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .btn.cta {
+    padding: 12px 20px;
+  }
+
+  .courses-section h2,
+  .benefits-section h2 {
+    font-size: 24px;
+  }
+
+  .cards {
+    padding: 15px;
+
+    gap: 15px;
+  }
+
+  .card {
+    min-width: 100%;
+
+    flex: 0 0 100%;
+  }
+
+  .div-img1,
+  .div-img2,
+  .div-img3,
+  .div-img4 {
+    height: 220px;
+  }
+
+  .scroll-btn {
+    font-size: 20px;
+
+    padding: 9px 13px;
+  }
+
+  .scroll-btn.left {
+    left: 3px;
+  }
+
+  .scroll-btn.right {
+    right: 3px;
+  }
+
+  .faq-title {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+}

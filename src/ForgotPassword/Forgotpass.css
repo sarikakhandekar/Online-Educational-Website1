@@ -1,0 +1,126 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* PAGE WRAPPER */
+.forgot-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #ffffff 0%, #d3ddf9 50%, #d3ddf9 100%); 
+  padding: 40px 20px;
+  font-family: 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  animation-name: delay;
+  animation-duration: 1s;
+}
+
+/* CARD */
+.forgot-box {
+  max-width: 420px;
+  width: 100%;
+  background: #ffffff;
+  padding: 48px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* TITLE */
+.forgot-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* INPUT GROUP */
+.input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 5px rgba(42, 82, 152, 0.4);
+}
+
+/* CAPTCHA */
+.captcha-box {
+  display: flex;
+  gap: 10px;
+}
+
+.captcha-box input {
+  flex: 1;
+}
+
+/* BUTTON */
+.reset-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4169e1;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reset-btn:hover {
+  background: #344e9b;
+}
+
+/* MESSAGE */
+.message {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}
+
+/* BACK TO LOGIN */
+.back-login {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.back-login a {
+  color: #2a5298;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-login a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 420px) {
+  .forgot-box {
+    width: 90%;
+  }
+}

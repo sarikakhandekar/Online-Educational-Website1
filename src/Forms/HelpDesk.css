@@ -1,0 +1,112 @@
+
+.helpdesk-wrapper {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  background: #f5f7fa;
+}
+
+
+.helpdesk-box {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1.2s ease;
+}
+
+.helpdesk-box h3 {
+  font-size: 1.6rem;
+  color: #4169e1;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #4169e1;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+
+input:disabled {
+  background: #f1f1f1;
+  cursor: not-allowed;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: #4169e1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+  background:#344F9D;
+  transform: translateY(-2px);
+}
+
+/* Message */
+.helpdesk-message {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.helpdesk-message.success {
+  color: green;
+}
+
+.helpdesk-message.error {
+  color: red;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 600px) {
+  .helpdesk-box {
+    padding: 1.5rem;
+  }
+}

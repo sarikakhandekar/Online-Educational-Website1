@@ -1,0 +1,223 @@
+.admin-root {
+    display: flex;
+    min-height: 100vh;
+    background: #f1f5f9;
+    font-family: system-ui, Arial, sans-serif;
+}
+
+/* ===== Sidebar ===== */
+.admin-sidebar {
+    width: 230px;
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+}
+
+.admin-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Links */
+.admin-link {
+    display: block;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #cbd5f5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.admin-link:hover {
+    background: #1e40af;
+    color: #fff;
+}
+
+.admin-link.active {
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+}
+
+/* Dropdown */
+.admin-dropdown {
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #cbd5f5;
+    margin-bottom: 8px;
+}
+
+.admin-dropdown:hover {
+    background: #1e40af;
+    color: #fff;
+}
+
+.admin-dropdown.active {
+    background: #2563eb;
+    color: #fff;
+}
+
+.admin-dropdown-menu {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.admin-dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+    color: #cbd5f5;
+    text-decoration: none;
+}
+
+.admin-dropdown-menu a:hover {
+    background: #1e40af;
+    color: white;
+}
+
+/* ===== Content ===== */
+.admin-content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* ===== Card ===== */
+.admin-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Tables ===== */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.admin-table th {
+    background: #e2e8f0;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.admin-table td {
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+/* ===== Buttons ===== */
+.admin-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: white;
+}
+
+.admin-btn-blue {
+    background: #2563eb;
+}
+
+.admin-btn-green {
+    background: #22c55e;
+}
+
+.admin-btn-red {
+    background: #ef4444;
+}
+
+/* ===== Inputs ===== */
+.admin-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* ===== Logout ===== */
+.admin-logout {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #ef4444;
+    color: white;
+    cursor: pointer;
+}
+
+.admin-table-bordered th,
+.admin-table-bordered td {
+    border: 1px solid #e5e7eb;
+}
+
+.admin-dropdown-menu .admin-link.active {
+    background: transparent;
+    color: #cbd5f5;
+    font-weight: normal;
+}
+
+/* ===== Add Course Form Layout ===== */
+.admin-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.admin-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-field label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #334155;
+}
+
+.admin-field.full {
+    grid-column: span 2;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .admin-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-field.full {
+        grid-column: span 1;
+    }
+}
+
+.enable-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: white;
+    background: #16a34a;
+    margin-left: 6px;
+}
+
+.disable-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: white;
+    background: #dc2626;
+    margin-left: 6px;
+}

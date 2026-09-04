@@ -1,0 +1,199 @@
+/* Flexible Learning Page Styles */
+
+.learning-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #ffffff 0%, #d3ddf9 50%, #d3ddf9 100%);
+  padding: 40px 20px;
+  font-family: 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  animation-name: delay;
+  animation-duration: 1s;
+}
+
+.learning-container {
+  max-width: 600px;
+  width: 100%;
+  background: #ffffff;
+  padding: 48px 44px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.08);
+  text-align: center;
+}
+
+.learning-badge {
+  display: inline-block;
+  background: #d3ddf9;
+  color: #4169e1;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.learning-headline {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 18px 0;
+  line-height: 1.2;
+}
+
+.learning-description {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.75;
+  margin: 0 0 36px 0;
+}
+
+.learning-points {
+  background: linear-gradient(135deg, #d3ddf9 0%, #a4b6ea 100%);
+  border-radius: 14px;
+  padding: 28px;
+  margin-bottom: 36px;
+  border: 1px solid #ede9fe;
+}
+
+.points-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #4169e1;
+  margin: 0 0 18px 0;
+}
+
+.points-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.point-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e9d5ff;
+}
+
+.point-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.point-item:first-child {
+  padding-top: 0;
+}
+
+.point-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.1);
+}
+
+.point-text {
+  font-size: 0.95rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.cta-wrapper {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button-primary {
+  background: #4169e1;
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.cta-button-primary:hover {
+  background: #3157ca;
+}
+
+.cta-button-primary:focus {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 2px;
+}
+
+
+
+
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .learning-container {
+    padding: 36px 24px;
+    border-radius: 16px;
+  }
+
+  .learning-headline {
+    font-size: 1.75rem;
+  }
+
+  .learning-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .learning-points {
+    padding: 22px 18px;
+  }
+
+  .points-title {
+    font-size: 1rem;
+  }
+
+  .point-text {
+    font-size: 0.9rem;
+  }
+
+  .point-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+
+  .cta-wrapper {
+    flex-direction: column;
+  }
+
+  .cta-button-primary {
+    width: 100%;
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .learning-container {
+    padding: 28px 20px;
+  }
+
+  .learning-headline {
+    font-size: 1.5rem;
+  }
+
+  .learning-badge {
+    font-size: 0.7rem;
+  }
+}
